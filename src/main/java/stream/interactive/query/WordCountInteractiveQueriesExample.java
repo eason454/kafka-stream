@@ -86,14 +86,14 @@ import java.util.Properties;
  */
 public class WordCountInteractiveQueriesExample {
     static final String TEXT_LINES_TOPIC = "TextLinesTopic";
-    static final String DEFAULT_HOST = "localhost";
+    static final String DEFAULT_HOST = "192.168.19.222";
 
     public static void main(String[] args) throws Exception {
         if (args.length == 0 || args.length > 2) {
             throw new IllegalArgumentException("usage: ... <portForRestEndPoint> [<bootstrap.servers> (optional)]");
         }
         final int port = Integer.parseInt(args[0]);
-        final String bootstrapServers = args.length > 1 ? args[1] : "localhost:9092";
+        final String bootstrapServers = args.length > 1 ? args[1] : "192.168.19.222:9092";
 
         Properties streamsConfiguration = new Properties();
         // Give the Streams application a unique name.  The name must be unique in the Kafka cluster

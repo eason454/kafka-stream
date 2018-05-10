@@ -13,6 +13,10 @@ import java.util.Locale;
 import java.util.Properties;
 import java.util.concurrent.CountDownLatch;
 
+/**
+ * start zk: bin/zookeeper-server-start.sh config/zookeeper.properties &
+ * start kafka: bin/kafka-server-start.sh config/server.properties
+ */
 public class WordCountDemo {
     public static void main(String[] args) throws Exception {
         Properties props = new Properties();
