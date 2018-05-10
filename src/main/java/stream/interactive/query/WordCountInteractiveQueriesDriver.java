@@ -15,7 +15,7 @@ import java.util.Random;
  */
 public class WordCountInteractiveQueriesDriver {
     public static void main(String [] args) throws Exception {
-        final String bootstrapServers = args.length > 0 ? args[0] : "192.168.19.222:9092";
+        final String bootstrapServers = args.length > 0 ? args[0] : "localhost:9092";
         final List<String> inputValues = Arrays.asList("hello world",
                 "all streams lead to kafka",
                 "streams",
